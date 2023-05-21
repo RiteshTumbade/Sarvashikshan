@@ -1,8 +1,17 @@
 import { Component } from '@angular/core';
+// import { flatTreeControl,MatTreeNestedDataSource,MatTreeFlattener  } from "@angular/cdk/tree";
+
+
+// interface ReleaseNode{
+//   name:string;
+//   children?:ReleaseNode[];
+
+// }
 import { ReleaseSprintBAcklog } from '../classes/release-sprint-backlog';
 import { ReleaseSprintBacklogSService } from '../Services/release-sprint-backlog-s.service';
 
 
+// const Release_data:ReleaseNode[]=[];
 @Component({
   selector: 'app-release',
   templateUrl: './release.component.html',
@@ -19,7 +28,7 @@ export class ReleaseComponent {
   }
 
   ngOnInit(): void {
-    this.getReleaseSprintBacklog(); 
+    this.getReleaseSprintBacklog();
   }
 
   private getReleaseSprintBacklog() {
