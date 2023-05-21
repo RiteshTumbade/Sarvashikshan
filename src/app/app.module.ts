@@ -34,7 +34,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { FormComponent } from './form/form.component';
 import { ImpedimentsComponent } from './impediments/impediments.component';
 import { ReleaseComponent } from './release/release.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -71,7 +71,8 @@ import { ReleaseComponent } from './release/release.component';
     MatButtonToggleModule,
     MatTabsModule,
     MatMenuModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

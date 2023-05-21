@@ -8,8 +8,8 @@ export class ReleaseSprintBAcklog {
             releaseName: string,
             projectId: number
         },
-        startDate: Date,
-        endDate: Date,
+        startDate: any,
+        endDate: any,
         totalEstimatedStoryPoint: number
     }
     backlogItemParentChildId: {
@@ -25,7 +25,7 @@ export class ReleaseSprintBAcklog {
                 projectId: number,
                 projectName: string,
                 companyName: string,
-                createdOn: Date,
+                createdOn: any,
                 createdBy: {
                     userId: number,
                     userFirstName: string,
@@ -43,7 +43,7 @@ export class ReleaseSprintBAcklog {
                     projectId: number,
                     projectName: string,
                     companyName: string
-                    createdOn: Date,
+                    createdOn: any,
                     createdBy: {
                         userId: number,
                         userFirstName: string,
@@ -86,7 +86,7 @@ export class ReleaseSprintBAcklog {
                 projectId: number,
                 projectName: string,
                 companyName: string,
-                createdOn:Date,
+                createdOn:any,
                 createdBy: {
                     userId: number,
                     userFirstName: string,
@@ -104,7 +104,7 @@ export class ReleaseSprintBAcklog {
                     projectId: number,
                     projectName: string,
                     companyName:string,
-                    createdOn: Date,
+                    createdOn: any,
                     createdBy: {
                         userId: number,
                         userFirstName: string,
@@ -149,7 +149,7 @@ export class ReleaseSprintBAcklog {
             projectId: number,
             projectName: string,
             companyName: string,
-            createdOn: Date,
+            createdOn: any,
             createdBy: {
                 userId: number,
                 userFirstName: string,
