@@ -19,7 +19,7 @@ export class ReleaseComponent {
   }
 
   ngOnInit(): void {
-    this.getReleaseSprintBacklog();
+    this.getReleaseSprintBacklog(); 
   }
 
   private getReleaseSprintBacklog() {
