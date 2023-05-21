@@ -3,6 +3,8 @@ import { FlatTreeControl } from '@angular/cdk/tree';
 import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material/tree';
 import { MatDialog } from '@angular/material/dialog';
 import { SignInComponent } from '../sign-in/sign-in.component';
+import { Release } from '../classes/release';
+import { ReleaseService } from '../Services/release.service';
 
 interface Data {
   name: string;
@@ -106,7 +108,7 @@ export class NavigationComponent {
 
   dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
 
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog , private  releaseService : ReleaseService) {
     this.dataSource.data = TREE_DATA;
   }
 
@@ -138,4 +140,23 @@ export class NavigationComponent {
   onRelease(){
     this.isSideNavOpen=false;
   }
+
+
+
+  // Release Connection
+
+ release : Release[] ;
+
+  ngOnInit(): void {
+    this.getAllRelease();
+  }
+
+  private getAllRelease() {
+    this.releaseService.getRelease().subscribe(data => {
+      this.release = data;
+      console.log(data)
+    })
+  } 
+
+
 }

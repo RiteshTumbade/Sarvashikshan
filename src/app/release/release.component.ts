@@ -34,7 +34,7 @@ export class ReleaseComponent {
   private getReleaseSprintBacklog() {
     this.releaseSprintbacklogService.getrelease_sprint_backlog().subscribe(data => {
       this.releaseSprintBacklog = data;
-      console.log(data)
+      // console.log(data)
     })
   }  
 }
