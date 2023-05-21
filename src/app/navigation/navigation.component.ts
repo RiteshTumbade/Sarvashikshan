@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+ import { Component } from '@angular/core';
 import { FlatTreeControl } from '@angular/cdk/tree';
 import { MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material/tree';
 import { MatDialog } from '@angular/material/dialog';
@@ -133,5 +133,9 @@ export class NavigationComponent {
 
   onImpediments() {
     this.isSideNavOpen = false;
+  }
+
+  onRelease(){
+    this.isSideNavOpen=false;
   }
 }

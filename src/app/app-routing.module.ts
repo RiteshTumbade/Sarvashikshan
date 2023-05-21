@@ -8,6 +8,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { EpicComponent } from './epic/epic.component';
 import { StoryComponent } from './story/story.component';
 import { ImpedimentsComponent } from './impediments/impediments.component';
+import { ReleaseComponent } from './release/release.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
   },
   {
     path:"impediments",component:ImpedimentsComponent
+  },
+
+  {
+    path:"release",component:ReleaseComponent
   }
 ];
 

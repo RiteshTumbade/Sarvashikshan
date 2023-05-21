@@ -33,6 +33,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatDialogModule} from '@angular/material/dialog';
 import { FormComponent } from './form/form.component';
 import { ImpedimentsComponent } from './impediments/impediments.component';
+import { ReleaseComponent } from './release/release.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { ImpedimentsComponent } from './impediments/impediments.component';
     TaskComponent,
     FormComponent,
     ImpedimentsComponent,
+    ReleaseComponent,
   ],
   imports: [
     BrowserModule,
