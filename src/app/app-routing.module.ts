@@ -9,6 +9,7 @@ import { EpicComponent } from './epic/epic.component';
 import { StoryComponent } from './story/story.component';
 import { ImpedimentsComponent } from './impediments/impediments.component';
 import { ReleaseComponent } from './release/release.component';
+import { ScrumBoardComponent } from './scrum-board/scrum-board.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,9 @@ const routes: Routes = [
 
   {
     path:"release",component:ReleaseComponent
+  },
+  {
+    path:"scrumBoard" , component : ScrumBoardComponent 
   }
 ];
 

@@ -35,6 +35,11 @@ import { FormComponent } from './form/form.component';
 import { ImpedimentsComponent } from './impediments/impediments.component';
 import { ReleaseComponent } from './release/release.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ScrumBoardComponent } from './scrum-board/scrum-board.component';
+
+// for Scrum Board 
+
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -50,6 +55,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormComponent,
     ImpedimentsComponent,
     ReleaseComponent,
+    ScrumBoardComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,7 +78,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatTabsModule,
     MatMenuModule,
     MatDialogModule,
-    HttpClientModule
+    HttpClientModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

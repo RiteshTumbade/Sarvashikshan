@@ -41,3 +41,24 @@ mat-tab-group {
     border: none;
     background-color: #16bca8;
 }
+
+
+/* buttom */
+
+
+.btn {
+    /* padding: 6px 45px; */
+    margin-top: 15px;
+    font-size: 12px;
+    width: 85%;
+    /* table-layout: fixed; */
+    border-collapse: collapse;
+    background: white;
+
+}
+
+.btn:hover {
+    color: black;
+    /* border-radius: 1px black; */
+    background: rgb(62, 189, 45);
+}
