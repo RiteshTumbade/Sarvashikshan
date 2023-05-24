@@ -1,5 +1,7 @@
-import { CdkDragDrop, moveItemInArray , transferArrayItem} from '@angular/cdk/drag-drop';
+import { Dialog } from '@angular/cdk/dialog';
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Component } from '@angular/core';
+import { EditFormComponent } from '../edit-form/edit-form.component';
 
 @Component({
   selector: 'app-scrum-board',
@@ -12,6 +14,10 @@ export class ScrumBoardComponent {
   todo = [''];
 
   done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
+
+  constructor(public dialog: Dialog) {
+
+  }
 
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
@@ -26,6 +32,14 @@ export class ScrumBoardComponent {
     }
   }
 
+  openDialog(): void {
+    const dialogRef = this.dialog.open(EditFormComponent, {
+      width: '100%',
+      height: '100%',
+    });
+
+
+  }
 
   // userstory : Userstory[] ;
 

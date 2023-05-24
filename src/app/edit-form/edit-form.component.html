@@ -1,0 +1,73 @@
+<div class="formbold-main-wrapper container-fluid">
+
+    <div class="formbold-form-wrapper">
+      <form  method="POST">
+    
+
+        <div class="formbold-input-flex">
+          <div>
+            <input type="email" name="email" id="email"  class="formbold-form-input" />
+            <label for="email" class="formbold-form-label"> Backlog Name </label>
+          </div>
+          <div>
+            <input type="text" name="phone" id="phone"  class="formbold-form-input" />
+            <label for="phone" class="formbold-form-label">Assigned TO</label>
+          </div>
+        </div>
+
+        <!-- Status aSSIGN TO -->
+
+        <div class="formbold-input-flex">
+            <div>
+              <!-- <input type="text" name="firstname" id="firstname" placeholder="Jane" class="formbold-form-input" /> -->
+              <label for="firstname" class="formbold-form-label">Status</label>
+              <select name="choice" class="formbold-form-input">
+                <option value="first" selected>To DO</option>
+                <option value="second">IN PROGRESS</option>
+                <option value="third">DONE</option>
+              </select>
+            </div>
+            <div>
+              <label for="firstname" class="formbold-form-label">Backlog Type</label>
+              <select name="choice" class="formbold-form-input">
+                <option value="first" selected>Epic</option>
+                <option value="second">User Story</option>
+                <option value="third">Task</option>
+              </select>
+            </div>
+          </div>
+
+        <!-- What Benifits -->
+        <div class="formbold-input-flex">
+          <div>
+            <input type="email" name="email" id="email" class="formbold-form-input" />
+            <label for="email" class="formbold-form-label"> What </label>
+          </div>
+          <div>
+            <input type="text" name="phone" id="phone"  class="formbold-form-input" />
+            <label for="phone" class="formbold-form-label"> Benifits </label>
+          </div>
+        </div>
+        <!-- Description  -->
+        <div class="formbold-textarea">
+          <textarea rows="6" name="message" id="message" placeholder="Write your Description..."
+            class="formbold-form-input"></textarea>
+          <label for="message" class="formbold-form-label"> Description </label>
+        </div>
+  
+        <!-- Acceptance Criteria -->
+        <div class="formbold-textarea">
+          <textarea rows="6" name="message" id="message" placeholder="Write your Acceptance Criteria..."
+            class="formbold-form-input"></textarea>
+          <label for="message" class="formbold-form-label"> Acceptance Criteria </label>
+        </div>
+  
+  
+  
+        <button class="formbold-btn">
+          Create
+        </button>
+        
+      </form>
+    </div>
+  </div>

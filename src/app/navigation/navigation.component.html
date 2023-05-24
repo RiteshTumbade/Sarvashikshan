@@ -25,23 +25,25 @@
 <mat-drawer-container class="sidenav-wrapper">
     <mat-drawer #sidenav mode="side" [(opened)]="isSideNavOpen">
 
-        <!-- Release Side Nave -->
+        <!------ Release Side Nave -->
         <div>
-            <ul>
+            <ul style="list-style-type: none;">
                 <li>
                     <details *ngFor="let r of release ">
-                        <summary style="font-size: 20px; color: black;padding-bottom: 15px;"><b>{{r.release_name}}</b>
+                        <summary style="font-size: 20px; color: black;padding-bottom: 15px;">{{r.release_name}}
                         </summary>
                         <ul *ngFor="let s of r.release_sprint ">
-                            <button [routerLink]="['scrumBoard']" type="button" class="btn btn-outline-secondary btn-rounded btn" mdbRipple
-                                rippleColor="dark">{{s.sprint_name}}</button>
+                            <!-- <button [routerLink]="['scrumBoard']" type="button"
+                                class="btn btn-outline-secondary btn-rounded btn" mdbRipple
+                                rippleColor="dark">{{s.sprint_name}}</button> -->
+                            <button [routerLink]="['scrumBoard']" style="margin-bottom: 10px ;" mat-stroked-button color="primary">{{s.sprint_name}}</button>
                             <!-- <li>{{s.sprint_name}}</li> -->
                         </ul>
                     </details>
                 </li>
             </ul>
         </div>
-
+        <!-- ---------------------- -->
         <div class="drawer">
             <div *ngIf="selectedDrawer === 0">
                 <div class="content">

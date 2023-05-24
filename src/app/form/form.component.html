@@ -1,8 +1,68 @@
-<ol>
-    <li>
-      <mat-form-field appearance="fill">
-        <mat-label>What's your name?</mat-label>
-        <input matInput>
-      </mat-form-field>
-    </li>
-  </ol>
+<div class="formbold-main-wrapper">
+
+  <div class="formbold-form-wrapper">
+    <form action="" method="POST">
+      <div class="formbold-input-flex">
+        <div>
+          <!-- <input type="text" name="firstname" id="firstname" placeholder="Jane" class="formbold-form-input" /> -->
+          <label for="firstname" class="formbold-form-label">Project</label>
+          <select name="choice" class="formbold-form-input">
+            <option value="first" selected>Project 1</option>
+            <option value="second">Project 2</option>
+            <option value="third">Project 3</option>
+          </select>
+        </div>
+        <div>
+          <label for="firstname" class="formbold-form-label">Backlog Type</label>
+          <select name="choice" class="formbold-form-input">
+            <option value="first" selected>Epic</option>
+            <option value="second">User Story</option>
+            <option value="third">Task</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="formbold-input-flex">
+        <div>
+          <input type="email" name="email" id="email"  class="formbold-form-input" />
+          <label for="email" class="formbold-form-label"> Backlog Name </label>
+        </div>
+        <div>
+          <input type="text" name="phone" id="phone"  class="formbold-form-input" />
+          <label for="phone" class="formbold-form-label">Assigned TO</label>
+        </div>
+      </div>
+      <!-- What Benifits -->
+      <div class="formbold-input-flex">
+        <div>
+          <input type="email" name="email" id="email" class="formbold-form-input" />
+          <label for="email" class="formbold-form-label"> What </label>
+        </div>
+        <div>
+          <input type="text" name="phone" id="phone"  class="formbold-form-input" />
+          <label for="phone" class="formbold-form-label"> Benifits </label>
+        </div>
+      </div>
+      <!-- Description  -->
+      <div class="formbold-textarea">
+        <textarea rows="6" name="message" id="message" placeholder="Write your Description..."
+          class="formbold-form-input"></textarea>
+        <label for="message" class="formbold-form-label"> Description </label>
+      </div>
+
+      <!-- Acceptance Criteria -->
+      <div class="formbold-textarea">
+        <textarea rows="6" name="message" id="message" placeholder="Write your Acceptance Criteria..."
+          class="formbold-form-input"></textarea>
+        <label for="message" class="formbold-form-label"> Acceptance Criteria </label>
+      </div>
+
+
+
+      <button class="formbold-btn">
+        Create
+      </button>
+      
+    </form>
+  </div>
+</div>

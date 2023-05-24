@@ -5,6 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { SignInComponent } from '../sign-in/sign-in.component';
 import { Release } from '../classes/release';
 import { ReleaseService } from '../Services/release.service';
+import { FormComponent } from '../form/form.component';
 
 interface Data {
   name: string;
@@ -119,8 +120,9 @@ export class NavigationComponent {
   }
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(SignInComponent, {
-      
+    const dialogRef = this.dialog.open(FormComponent, {
+      width:'50%',
+      height: '1200px',
     });
 
     dialogRef.afterClosed().subscribe(result => {

@@ -40,6 +40,8 @@ import { ScrumBoardComponent } from './scrum-board/scrum-board.component';
 // for Scrum Board 
 
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { EditFormComponent } from './edit-form/edit-form.component';
+
 
 @NgModule({
   declarations: [
@@ -56,6 +58,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     ImpedimentsComponent,
     ReleaseComponent,
     ScrumBoardComponent,
+    EditFormComponent,
   ],
   imports: [
     BrowserModule,
